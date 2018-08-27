@@ -1,5 +1,5 @@
 package dataStructures;
-
+import java.util.Scanner;
 public class MainClass {
 	
 	public class Header{
@@ -23,12 +23,16 @@ public class MainClass {
 		}
 	}
 	public static void main(String[] args) {
+		Scanner n=new Scanner(System.in);
+		System.out.println("Value?");
+		int val=n.nextInt();
 		System.out.println("Started");
 		MainClass x=new MainClass();
 		Header h=x.new Header();
-		Node newElement=x.new Node(3);
+		Node newElement=x.new Node(val);
 		h.addNode(newElement);
 		System.out.println(h.head.value);
+		
 	}
 
 	
