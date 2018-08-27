@@ -4,9 +4,12 @@ import dataStructures.LinkedList;
 import dataStructures.Element;
 public class MainClass {
 	public static void main(String[] args) {
-		Element ele_1=new Element(1);
+		Element ele_1=new Element(10);
+		Element ele_2=new Element(100);
 		LinkedList a=new LinkedList();
-		a.insert(ele_1);
+		a.insert(ele_1); //this inserts at start
+		a.insert(ele_2); //this inserts at start too
+		System.out.println(a.head.next.value); //for testing the link
 	}
 	}
 //	

@@ -1,7 +1,7 @@
 package dataStructures;
 import dataStructures.Element;
 public class LinkedList {
-	private Element head;
+	public Element head;
 	public LinkedList(Element element){
 		this.head=element;
 	}
