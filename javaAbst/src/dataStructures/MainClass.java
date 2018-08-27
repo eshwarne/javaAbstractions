@@ -6,7 +6,7 @@ public class MainClass {
 	public static void main(String[] args) {
 		Element ele_1=new Element(1);
 		LinkedList a=new LinkedList();
-		a.insert(ele);
+		a.insert(ele_1);
 	}
 	}
 //	
