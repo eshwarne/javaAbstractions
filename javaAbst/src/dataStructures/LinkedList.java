@@ -5,6 +5,14 @@ public class LinkedList {
 	public LinkedList(Element element){
 		this.head=element;
 	}
+	public LinkedList() {
+		this.head=null;
+	}
+	public void insert(Element ele) {
+		ele.next=this.head;
+		this.head=ele;
+		
+	}
 	public void getPos(int pos) {
 		
 	}
@@ -31,4 +39,5 @@ public class LinkedList {
 			}
 		}
 	}
+	
 }
