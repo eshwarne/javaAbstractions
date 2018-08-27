@@ -19,7 +19,11 @@ public class LinkedList {
 		else {
 			for(i=0;i<pos;i++){
 				if(i==pos-1) {
-					
+					Element prev=current;
+					if(current.next!=null) {
+						ele.next=current;
+						prev.next=ele;
+					}
 				}
 				else {
 					current=current.next;
